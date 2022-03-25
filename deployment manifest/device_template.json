@@ -1,0 +1,146 @@
+[
+  {
+    "@id": "dtmi:iotcentralmask1:FaceMaskDetection1gl;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:iotcentralmask1:FaceMaskDetection1gl:FaceMaskDetection2k8;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Model Result - Camera1"
+        },
+        "name": "FaceMaskDetection2k8",
+        "schema": "dtmi:iotcentralmask1:FaceMaskDetection2k8;1"
+      },
+      {
+        "@id": "dtmi:iotcentralmask1:FaceMaskDetection1gl:FaceMaskDetection6ln;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Device HW Static Info"
+        },
+        "name": "FaceMaskDetection6ln",
+        "schema": "dtmi:iotcentralmask1:FaceMaskDetection6ln;1"
+      },
+      {
+        "@id": "dtmi:iotcentralmask1:FaceMaskDetection1gl:aiModel;1",
+        "@type": "Property",
+        "description": {
+          "en": "Name of using AI model"
+        },
+        "displayName": {
+          "en": "AI Model"
+        },
+        "name": "aiModel",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Face Mask Detection Jetson Xavier NX"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:iotcentralmask1:FaceMaskDetection2k8;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:iotcentralmask1:FaceMaskDetection2k8:noPeopleWearingMask;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Wearing mask"
+        },
+        "name": "noPeopleWearingMask",
+        "schema": "integer"
+      },
+      {
+        "@id": "dtmi:iotcentralmask1:FaceMaskDetection2k8:noPeopleNotWearingMask;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Not wearing mask"
+        },
+        "name": "noPeopleNotWearingMask",
+        "schema": "integer"
+      }
+    ],
+    "displayName": {
+      "en": "Model Result - Camera1"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:iotcentralmask1:FaceMaskDetection6ln;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:iotcentralmask1:FaceMaskDetection6ln:manufacturer;1",
+        "@type": "Property",
+        "description": {
+          "en": "Company name of the device manufacturer. This could be the same as the name of the original equipment manufacturer (OEM). Ex. Nvidia."
+        },
+        "displayName": {
+          "en": "Manufacturer"
+        },
+        "name": "manufacturer",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:iotcentralmask1:FaceMaskDetection6ln:deviceModel;1",
+        "@type": "Property",
+        "description": {
+          "en": "Device model name or ID. Ex. Jetson Nano."
+        },
+        "displayName": {
+          "en": "Device model"
+        },
+        "name": "deviceModel",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:iotcentralmask1:FaceMaskDetection6ln:totalMemory;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Total memory"
+        },
+        "name": "totalMemory",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:iotcentralmask1:FaceMaskDetection6ln:totalGPU;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Total GPU"
+        },
+        "name": "totalGPU",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:iotcentralmask1:FaceMaskDetection6ln:cpuArchitecture;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "CPU architecture"
+        },
+        "name": "cpuArchitecture",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Device HW Static Info"
+    }
+  }
+]
