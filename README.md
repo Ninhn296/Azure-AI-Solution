@@ -1,6 +1,14 @@
 # Train And Deploy AI Model To Jetson Nano Using Nvidia Deepstream and Azure IoT Central
+Edge is where the data resides and is collected in the field. Scalability issues, excessive power consumption, connectivity, and latency are some of the many factors driving the demand for Edge infrastructure in the form of micro-data centers or ants. distributed computing architecture. A recent study shows that the Edge computing market is expected to be worth at $3.24 billion by 2025.
 
-This demo will be show how to deploy a mask detection application to [NVIDIA Jetson Nano device](https://developer.nvidia.com/embedded/buy/jetson-nano-devkit). Demo use [NVIDIA DeepStream SDK](https://developer.nvidia.com/Deepstream-sdk) for implementing AI application to achieve the best possible performance. Besides, [Azure IoT Central](https://azure.microsoft.com/en-us/services/iot-central/#features) will be used to manage and deploy application to Jetson Nano.
+
+Edge AI will enable real-time operations including data generation, decisions and actions where in milliseconds. Real-time operations are crucial for self-driving cars, robotics, and many other fields. Reducing power consumption and thus improving battery life is very important for wearable devices. Edge AI will reduce the cost of data communication, as less data will be transferred. By handling data locally, you can avoid the problem of streaming and storing a lot of data to the Cloud that makes you vulnerable from a privacy perspective.
+
+
+This demo will be show how to deploy a mask detection application to [NVIDIA Jetson Nano device](https://developer.nvidia.com/embedded/buy/jetson-nano-devkit). Demo use [NVIDIA DeepStream SDK](https://developer.nvidia.com/Deepstream-sdk) for implementing AI application to achieve the best possible performance. With deepstream, AI application can reach to real-time for solving solution. Besides, [Azure IoT Central](https://azure.microsoft.com/en-us/services/iot-central/#features) will be used to manage and deploy application to Jetson Nano via [Azure IoT Edge](https://azure.microsoft.com/en-us/services/iot-edge/). IoT Edge gives you the possibility to run this pipeline next to your cameras, where the video data is being generated, thus lowering your bandwitch costs and enabling scenarios with poor internet connectivity or privacy concerns.
+
+
+Currently covid 19 is happening , so this demo will implement an app that allows human mask wearing monitoring. Data will be displayed on IoT central for monitoring and analysis.
 
 
 ## Prerequisites
