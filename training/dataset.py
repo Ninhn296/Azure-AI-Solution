@@ -8,6 +8,7 @@ import cv2
 from model_ssd.ssd import MatchPrior
 from model_ssd import mobilenetv1_ssd_config
 
+
 config = mobilenetv1_ssd_config
 
 target_transform = MatchPrior(config.priors,
