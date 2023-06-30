@@ -2,7 +2,6 @@
 import torchvision
 from model_ssd.mobilenetv1_ssd import create_mobilenetv1_ssd
 
-
 class Model(object):
 
     def __init__(self):
