@@ -10,3 +10,4 @@ RUN pip install azure-iot-device
 ADD ./src /src
 
 ENTRYPOINT ["python3", "/src/bridge.py"]
+
