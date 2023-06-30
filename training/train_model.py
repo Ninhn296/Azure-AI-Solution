@@ -15,6 +15,7 @@ import transforms as T
 
 CLASS_NAMES = "class_names.txt"
 
+
 def get_transforms(train=True):
     """ Get transform object of the dataset.
         Args:
