@@ -7,6 +7,7 @@ RUN set -ex; \
         gcc \
         g++
 
+
 WORKDIR /opt/nvidia/deepstream/deepstream-5.1/sources/apps/sample_apps/deepstream-test5/configs/
 
 # Copy configuration file
